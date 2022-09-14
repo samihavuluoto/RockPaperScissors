@@ -1,6 +1,3 @@
-let playerChoice = prompt("Rock, Paper, Scissors?");
-playerChoice = playerChoice.toLowerCase();
-
 function getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3)
 
@@ -15,11 +12,9 @@ function getComputerChoice() {
     }
 }
 
-    let computerChoice
+    let computerChoice = getComputerChoice();
 
 function playRound(playerChoice, computerChoice){
-
-    computerChoice = getComputerChoice();
 
     if (playerChoice === "rock" && computerChoice === "scissors"){
         return "You win! Rock beats scissors.";
@@ -52,3 +47,19 @@ function playRound(playerChoice, computerChoice){
         return "Invalid choice. Please choose rock, paper, or scissors.";
     }
 }
+
+function game(){
+    for (let i = 0; i < 5; i++){
+
+        let playerChoice = prompt("Rock, Paper, Scissors?");
+        playerChoice = playerChoice.toLowerCase();
+
+        let computerChoice = getComputerChoice();
+
+        console.log(playRound(playerChoice, computerChoice));
+
+    }
+}
+
+game()
+
