@@ -11,13 +11,16 @@ function getComputerChoice() {
         return "paper";
     }
     else{
-        return "scissors;"
+        return "scissors";
     }
 }
 
-let computerChoice = getComputerChoice();
+    let computerChoice
 
 function playRound(playerChoice, computerChoice){
+
+    computerChoice = getComputerChoice();
+
     if (playerChoice === "rock" && computerChoice === "scissors"){
         return "You win! Rock beats scissors.";
     }
@@ -36,8 +39,16 @@ function playRound(playerChoice, computerChoice){
     else if(playerChoice === "scissors" && computerChoice === "rock"){
         return "You lose! Rock beats scissors.";
     }
+    else if(playerChoice === "scissors" && computerChoice === "scissors"){
+        return "It's a tie! You both chose scissors.";
+    }
+    else if(playerChoice === "rock" && computerChoice === "rock"){
+        return "It's a tie! You both chose rock.";
+    }
+    else if(playerChoice === "paper" && computerChoice === "paper"){
+        return "It's a tie! You both chose paper.";
+    }
     else{
-        return "Invalid choice. Please choose rock, paper, or scissors."
+        return "Invalid choice. Please choose rock, paper, or scissors.";
     }
 }
-
