@@ -72,20 +72,22 @@ function game(){
 }
 
 
+const results = document.getElementById("results");
+
 const rock = document.getElementById("rock");
 
 rock.addEventListener("click", function(){
-    console.log(playRound("rock", getComputerChoice()));
+    results.innerText = playRound("rock", getComputerChoice());
 });
 
 const paper = document.getElementById("paper");
 
 paper.addEventListener("click", function(){
-    console.log(playRound("paper", getComputerChoice()));
+    results.innerText  = playRound("paper", getComputerChoice());
 });
 
 const scissors = document.getElementById("scissors");
 
 scissors.addEventListener("click", function(){
-    console.log(playRound("scissors", getComputerChoice()));
+    results.innerText  = playRound("scissors", getComputerChoice());
 });
