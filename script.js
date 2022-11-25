@@ -77,3 +77,15 @@ const rock = document.getElementById("rock");
 rock.addEventListener("click", function(){
     console.log(playRound("rock", getComputerChoice()));
 });
+
+const paper = document.getElementById("paper");
+
+paper.addEventListener("click", function(){
+    console.log(playRound("paper", getComputerChoice()));
+});
+
+const scissors = document.getElementById("scissors");
+
+scissors.addEventListener("click", function(){
+    console.log(playRound("scissors", getComputerChoice()));
+});
