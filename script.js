@@ -13,7 +13,6 @@ function getComputerChoice() {
 }
 
     let computerChoice = getComputerChoice();
-<<<<<<< HEAD
 
     let playerScore = 0;
     let computerScore = 0;
@@ -118,8 +117,6 @@ function game(){
 }
 
 game()
-=======
->>>>>>> rps-ui
 
     let playerScore = 0;
     let computerScore = 0;
